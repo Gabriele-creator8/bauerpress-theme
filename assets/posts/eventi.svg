@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#fff"/>
+  <rect width="1600" height="1000" fill="#7dff5a" opacity="0.14"/>
+  <g transform="translate(260 260)" fill="#111" opacity="0.12">
+    <rect x="0" y="0" width="520" height="520" rx="46"/>
+    <rect x="600" y="0" width="520" height="240" rx="46"/>
+    <rect x="600" y="280" width="520" height="240" rx="46"/>
+  </g>
+  <g transform="translate(310 310)" fill="none" stroke="#111" stroke-opacity="0.22" stroke-width="6">
+    <path d="M40 140 L160 260 L420 40"/>
+  </g>
+  <text x="120" y="160" font-family="ui-serif, Georgia, serif" font-size="70" font-weight="800" fill="#111">Agenda</text>
+  <text x="120" y="220" font-family="ui-sans-serif, system-ui" font-size="30" font-weight="800" fill="#333">Eventi, club, date da segnare</text>
+</svg>

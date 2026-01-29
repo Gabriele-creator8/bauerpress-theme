@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#fff"/>
+  <rect width="1600" height="1000" fill="#ff3d9a" opacity="0.14"/>
+  <g transform="translate(260 260)" stroke="#111" stroke-opacity="0.25" stroke-width="6" fill="none">
+    <path d="M220 0 C 20 160, 20 360, 220 520" />
+    <path d="M520 0 C 720 160, 720 360, 520 520" />
+    <path d="M220 0 L520 0" />
+    <path d="M220 520 L520 520" />
+  </g>
+  <g fill="#111" opacity="0.12" transform="translate(910 310)">
+    <circle cx="140" cy="120" r="120" />
+    <rect x="0" y="280" width="520" height="40" rx="20"/>
+    <rect x="0" y="350" width="440" height="34" rx="17"/>
+  </g>
+  <text x="120" y="160" font-family="ui-serif, Georgia, serif" font-size="70" font-weight="800" fill="#111">Curiosità</text>
+  <text x="120" y="220" font-family="ui-sans-serif, system-ui" font-size="30" font-weight="800" fill="#333">Piccoli fatti che ti fanno dire “ah!”</text>
+</svg>

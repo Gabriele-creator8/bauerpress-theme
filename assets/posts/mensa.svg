@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#fff"/>
+  <rect width="1600" height="1000" fill="#00c2ff" opacity="0.16"/>
+  <g transform="translate(830 520)">
+    <circle r="260" fill="#fff" stroke="#111" stroke-opacity="0.25" stroke-width="6"/>
+    <circle r="205" fill="#fff" opacity="0.95" stroke="#111" stroke-opacity="0.16" stroke-width="4"/>
+    <path d="M0 0 L205 0 A205 205 0 0 1 0 205 Z" fill="#ffd200" opacity="0.30"/>
+    <path d="M0 0 L0 205 A205 205 0 0 1 -205 0 Z" fill="#ff3d9a" opacity="0.22"/>
+    <path d="M0 0 L-205 0 A205 205 0 0 1 0 -205 Z" fill="#7dff5a" opacity="0.20"/>
+    <path d="M0 0 L0 -205 A205 205 0 0 1 205 0 Z" fill="#00c2ff" opacity="0.18"/>
+  </g>
+  <text x="120" y="160" font-family="ui-serif, Georgia, serif" font-size="70" font-weight="800" fill="#111">Mensa &amp; snack</text>
+  <text x="120" y="220" font-family="ui-sans-serif, system-ui" font-size="30" font-weight="800" fill="#333">Sopravvivenza tra una lezione e l'altra</text>
+</svg>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contatti — Bauer Zine</title>
+  <meta name="description" content="Contatti della redazione e invio segnalazioni." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+  <div class="container">
+    <div class="topbar">
+      <a class="mast" href="index.html" aria-label="Vai alla Home Bauer Zine">
+        <span class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2l2.7 5.7L21 10l-4.6 4.5 1.1 6.5L12 18.8 6.5 21l1.1-6.5L3 10l6.3-2.3L12 2z"/>
+          </svg>
+        </span>
+        <span class="title">
+          <strong>BAUER ZINE</strong>
+          <span>La fanzine degli studenti</span>
+        </span>
+      </a>
+
+      <div class="issue" aria-label="Numero della fanzine">
+        <span class="dot" aria-hidden="true"></span>
+        Numero 01 · Gennaio 2026
+      </div>
+    </div>
+
+    <nav aria-label="Menu">
+      <div class="navlinks">
+        <a class="" href="index.html">Home</a>
+      <a class="" href="notizie.html">Notizie</a>
+      <a class="" href="info.html">Info</a>
+      <a class="" href="curiosita.html">Curiosità</a>
+      <a class="" href="archivio.html">Archivio</a>
+      <a class="" href="redazione.html">Redazione</a>
+      <a class="active" href="contatti.html">Contatti</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> <span>›</span> <span>Contatti</span>
+    </div>
+
+    <h2 class="section-title">Contatti</h2>
+    <p class="muted" style="margin-top:0">
+      Sito statico: il form usa <em>mailto</em> (dipende dal client email del dispositivo).
+    </p>
+
+    <div class="grid" aria-label="Contatti">
+      <div class="card">
+        <div class="pad">
+          <h3>Scrivi alla redazione</h3>
+          <p>Segnalazioni, idee, richieste di correzioni, proposte rubriche.</p>
+          <div class="meta" style="margin-top:12px">
+            <a class="chip" href="mailto:redazione@bauer-scuola.it?subject=Segnalazione%20Bauer%20Zine">✉️ redazione@bauer-scuola.it</a>
+            <span class="chip">📌 Oggetto chiaro</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="pad">
+          <h3>Invia una segnalazione rapida</h3>
+          <form class="form" action="mailto:redazione@bauer-scuola.it" method="post" enctype="text/plain">
+            <div>
+              <label for="nome">Nome</label>
+              <input id="nome" name="Nome" placeholder="Es. Giulia 3B" />
+            </div>
+            <div>
+              <label for="tema">Tema</label>
+              <input id="tema" name="Tema" placeholder="Es. Notizia / Curiosità / Info" />
+            </div>
+            <div>
+              <label for="messaggio">Messaggio</label>
+              <textarea id="messaggio" name="Messaggio" placeholder="Racconta la tua segnalazione..."></textarea>
+            </div>
+            <button class="btn" type="submit">Apri email →</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="pad">
+          <h3>Linee guida</h3>
+          <ul style="margin:0; padding-left:18px">
+            <li>Niente dati sensibili</li>
+            <li>Rispetta privacy e permessi</li>
+            <li>Se citi qualcuno, chiedi ok</li>
+            <li>Fatti verificabili &amp; fonti (se possibile)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+  <div class="container">
+    <div class="small">
+      <strong>BAUER ZINE</strong> — progetto didattico (demo) ·
+      <a href="mailto:redazione@bauer-scuola.it">redazione@bauer-scuola.it</a> ·
+      Stampa “artigianale” &amp; idee fresche.
+    </div>
+    <div class="small" style="margin-top:8px">
+      © 2026 Studenti Scuola Bauer — tutti i contenuti sono esempi per esercitazione.
+    </div>
+  </div>
+</footer>
+</body>
+</html>

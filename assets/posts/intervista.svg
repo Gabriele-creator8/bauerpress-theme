@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#fff"/>
+  <rect width="1600" height="1000" fill="#ffd200" opacity="0.25"/>
+  <g transform="translate(250 260)">
+    <rect x="0" y="0" width="1100" height="520" rx="44" fill="#fff" stroke="#111" stroke-opacity="0.25" stroke-width="6"/>
+    <circle cx="220" cy="230" r="120" fill="#00c2ff" opacity="0.25"/>
+    <rect x="410" y="150" width="610" height="34" rx="17" fill="#111" opacity="0.20"/>
+    <rect x="410" y="220" width="520" height="28" rx="14" fill="#111" opacity="0.16"/>
+    <rect x="410" y="280" width="560" height="28" rx="14" fill="#111" opacity="0.16"/>
+    <rect x="410" y="340" width="440" height="28" rx="14" fill="#111" opacity="0.16"/>
+  </g>
+  <text x="120" y="160" font-family="ui-serif, Georgia, serif" font-size="70" font-weight="800" fill="#111">Intervista</text>
+  <text x="120" y="220" font-family="ui-sans-serif, system-ui" font-size="30" font-weight="800" fill="#333">Dietro le quinte della scuola</text>
+</svg>
