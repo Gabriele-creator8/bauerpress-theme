@@ -1,3 +1,5 @@
+<?php get_header (); ?>
+
 <!doctype html>
 <html lang="it">
 <head>
@@ -43,6 +45,8 @@
     </nav>
   </div>
 </header>
+
+<?php get_footer(); ?>
 
   <section class="hero" aria-label="Hero">
     <div class="container hero-grid">
