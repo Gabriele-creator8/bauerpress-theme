@@ -1,12 +1,9 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title><?php bloginfo( 'name' ); - Home?></title>
+  <title><?php bloginfo( 'name' ); ?> - Home</title>
   <meta name="description" content="<?php bloginfo( 'description' ); ?>" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
