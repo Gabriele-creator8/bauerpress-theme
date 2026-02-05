@@ -1,52 +1,7 @@
 <?php get_header (); ?>
 
-<!doctype html>
-<html lang="it">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bauer Zine — Home</title>
-  <meta name="description" content="Fanzine degli studenti della Scuola Bauer: notizie, info e curiosità." />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header>
-  <div class="container">
-    <div class="topbar">
-      <a class="mast" href="index.html" aria-label="Vai alla Home Bauer Zine">
-        <span class="logo" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2l2.7 5.7L21 10l-4.6 4.5 1.1 6.5L12 18.8 6.5 21l1.1-6.5L3 10l6.3-2.3L12 2z"/>
-          </svg>
-        </span>
-        <span class="title">
-          <strong>BAUER ZINE</strong>
-          <span>La fanzine degli studenti</span>
-        </span>
-      </a>
 
-      <div class="issue" aria-label="Numero della fanzine">
-        <span class="dot" aria-hidden="true"></span>
-        Numero 01 · Gennaio 2026
-      </div>
-    </div>
 
-    <nav aria-label="Menu">
-      <div class="navlinks">
-        <a class="active" href="index.html">Home</a>
-      <a class="" href="notizie.html">Notizie</a>
-      <a class="" href="info.html">Info</a>
-      <a class="" href="curiosita.html">Curiosità</a>
-      <a class="" href="archivio.html">Archivio</a>
-      <a class="" href="redazione.html">Redazione</a>
-      <a class="" href="contatti.html">Contatti</a>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<?php get_footer(); ?>
 
   <section class="hero" aria-label="Hero">
     <div class="container hero-grid">
@@ -206,17 +161,6 @@
     </div>
   </main>
 
-  <footer>
-  <div class="container">
-    <div class="small">
-      <strong>BAUER ZINE</strong> — progetto didattico (demo) ·
-      <a href="mailto:redazione@bauer-scuola.it">redazione@bauer-scuola.it</a> ·
-      Stampa “artigianale” &amp; idee fresche.
-    </div>
-    <div class="small" style="margin-top:8px">
-      © 2026 Studenti Scuola Bauer — tutti i contenuti sono esempi per esercitazione.
-    </div>
-  </div>
-</footer>
-</body>
-</html>
+
+
+<?php get_footer(); ?>
