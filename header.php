@@ -15,15 +15,15 @@
   <div class="container">
     <div class="topbar">
       <a class="mast" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Vai alla Home Bauer Zine">
-        <?php bloginfo( 'name' ); ?>
+        
         <span class="logo" aria-hidden="true">
           <svg viewBox="0 0 24 24">
             <path d="M12 2l2.7 5.7L21 10l-4.6 4.5 1.1 6.5L12 18.8 6.5 21l1.1-6.5L3 10l6.3-2.3L12 2z"/>
           </svg>
         </span>
         <span class="title">
-          <strong>BAUER ZINE</strong>
-          <span>La fanzine degli studenti</span>
+          <strong><?php bloginfo( 'name' ); ?></strong>
+          <span><?php bloginfo('description'); ?></span>
         </span>
       </a>
 
