@@ -8,7 +8,7 @@ get_header();
 <main class="site-main container">
     <section>
         <header class="page-header">
-            <h2 class="page-title">Blog</h2>
+            <h2 class="page-title">ALTRI ARTICOLI</h2>
             <p class="page-subtitle">
                 Qui verrà mostrato l'elenco degli articoli (template<strong>home.php</strong> in WordPress).
             </p>

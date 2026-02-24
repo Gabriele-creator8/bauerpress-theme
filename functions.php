@@ -67,4 +67,4 @@ function bauerpress_assets() {
 
 }
 
-add_action('wp-enqueue_scripts', 'bauerpress_assets');
+add_action('wp_enqueue_scripts', 'bauerpress_assets');

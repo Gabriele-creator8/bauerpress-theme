@@ -9,7 +9,7 @@
         <div class="pad">
           <h1 class="bighead">Notizie, info e curiosità… raccontate dagli studenti.</h1>
           <p class="lead">
-            Benvenutə su <strong>Bauer Zine</strong>: una fanzine fatta di micro-storie, aggiornamenti utili e
+            Benvenuti su <strong>Bauer Zine</strong>: una fanzine fatta di micro-storie, aggiornamenti utili e
             cose strane (ma vere) che succedono tra aule e corridoi.
           </p>
           <div class="sticker-row" aria-label="Sticker">
@@ -18,8 +18,8 @@
             <span class="sticker pink">🧠 Curiosità</span>
           </div>
           <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
-            <a class="btn" href="<?php echo get_permalink( get_page_by_path('archivio') ); ?>">Archivio</a>
-            <a class="btn" href="<?php echo get_permalink( get_page_by_path('contatti') ); ?>">Contatti</a>
+            <a class="btn" href="<?php echo get_permalink( get_page_by_path('archivio') ); ?>">Sfoglia l'archivio →</a>
+            <a class="btn" href="<?php echo get_permalink( get_page_by_path('contatti') ); ?>">Invia una segnalazione →</a>
           </div>
         </div>
       </div>

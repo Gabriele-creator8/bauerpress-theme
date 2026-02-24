@@ -74,7 +74,7 @@ header{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:8px;
+  gap:16px;
   padding: 12px 0;
 }
 
@@ -144,9 +144,11 @@ nav{
   display:flex;
   flex-wrap:wrap;
   gap:12px;
+  list-style-type: none;
 }
 
 .navlinks a{
+  display: inline-block;
   font-weight: 950;
   letter-spacing: .02em;
   padding: 7px 10px;
@@ -161,7 +163,7 @@ nav{
   border-color: rgba(17,17,17,.55);
 }
 
-.navlinks a.active{
+.navlinks .current-menu-item a{
   border-color: rgba(17,17,17,.85);
   background: linear-gradient(135deg, rgba(255,61,154,.20), rgba(0,194,255,.18));
 }
