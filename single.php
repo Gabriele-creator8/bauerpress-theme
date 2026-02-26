@@ -1,48 +1,59 @@
 <?php get_header(); ?>
 
-<main class="site-main container">
+ <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> <span>›</span> <a href="archivio.html">Archivio</a> <span>›</span> <span>Articolo</span>
+    </div>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<article <?php post_class(); ?>>
+<article class="article" aria-label="Articolo">
+      <div class="head">
+        <div class="feature">
+          <?php the_post_thumbnail('medium_large'); ?>
+          <div class="badge">Notizie</div>
+          <div class="date"><?php the_date(); ?></div>
+        </div>
+      </div>
 
-  <header class="single-post-header">
+      <div class="content">
+        <h1><?php the_title(); ?></h1>
 
-    <h1 class="single-post-title"><?php the_title(); ?></h1>
+        <div class="meta">
+          <span class="chip">✍️ Redazione</span>
+          <span class="chip">📅 Sabato 10 gennaio 2026</span>
+          <span class="chip">🗞️ Bauer Zine #01</span>
+        </div>
 
-    <p class="single-post-meta">
-      Pubblicato il <?php echo get_the_date(); ?>
-      da <strong><?php the_author(); ?></strong>
+        <?php the_content(); ?>
 
-      <?php $cats = get_the_category();
-      if ( $cats ) : ?>
-        in <span class="badge"><?php echo esc_html( $cats[0]->name ); ?></span>
-      <?php endif; ?>
-    </p>
+        <hr class="sep" />
 
-    <?php if ( function_exists('get_field') ) : ?>
-
-      <?php if ( get_field('luogo') ) : ?>
-        <p>Luogo dell'evento: <?php the_field('luogo'); ?></p>
-      <?php endif; ?>
-
-      <?php if ( get_field('data_evento') ) : ?>
-        <p>Data dell'evento: <?php the_field('data_evento'); ?></p>
-      <?php endif; ?>
-
-    <?php endif; ?>
-
-  </header>
-
-  <div class="single-post-content">
-    <?php the_post_thumbnail('medium_large'); ?>
-    <?php the_content(); ?>
-  </div>
-
-</article>
+        <div style="display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn" href="archivio.html">← Torna all’archivio</a>
+          <a class="btn" href="contatti.html">Invia una segnalazione →</a>
+        </div>
+      </div>
+    </article>
 
 <?php endwhile; endif; ?>
 
-<?php get_sidebar(); ?>
+    <section>
+        <header class="page-header">
+            <h2 class="page-title"><strong>ALTRI ARTICOLI</strong></h2>
+        </header>
+        <div class="grid" aria-label="Lista notizie">
+        <?php if ( have_posts() ) : ?>
+                <?php while ( have_posts() ) : the_post(); ?>
+                    <?php get_template_part('partials/post'); ?>
+                <?php endwhile; ?>
+
+            <?php the_posts_pagination(); ?>
+
+        <?php else : ?>
+            <p>Nessun articolo trovato.</p>
+        <?php endif; ?>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

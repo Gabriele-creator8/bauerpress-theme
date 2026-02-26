@@ -1,34 +1,31 @@
-<?php
-/**
- * Template per la pagina del blog (home.php)
-*/
-get_header();
-?>
+<?php get_header(); ?>
 
 <main class="site-main container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> <span>›</span> <a href="archivio.html">Notizie</a>
+    </div>
     <section>
-        <header class="page-header">
-            <h2 class="page-title">ALTRI ARTICOLI</h2>
+        <header class="page-header">    
+        <h2 class="page-title"><strong>NOTIZIE</strong></h2>
             <p class="page-subtitle">
-                Qui verrà mostrato l'elenco degli articoli (template<strong>home.php</strong> in WordPress).
+                <strong>Progetti, iniziative, aggiornamenti (sempre in versione “zine”).</strong>
             </p>
         </header>
         
+        <div class="grid" aria-label="Lista notizie">
         <?php if ( have_posts() ) : ?>
-            <ul class="post-list">
                 <?php while ( have_posts() ) : the_post(); ?>
                     <?php get_template_part('partials/post'); ?>
                 <?php endwhile; ?>
-            </ul>
 
             <?php the_posts_pagination(); ?>
 
         <?php else : ?>
             <p>Nessun articolo trovato.</p>
         <?php endif; ?>
+        </div>
     </section>
 
-    <?php get_sidebar(); ?>
 </main>
 
 <?php get_footer(); ?>
