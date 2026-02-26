@@ -58,33 +58,8 @@ $query = new WP_Query([
 
 if ($query->have_posts()) :
   while ($query->have_posts()) : $query->the_post();
-?>
-  <a class="card" href="<?php the_permalink(); ?>">
-    <div class="feature">
-      <?php if (has_post_thumbnail()) : ?>
-        <?php the_post_thumbnail('medium'); ?>
-      <?php endif; ?>
-      <div class="badge">
-        <?php the_category(', '); ?>
-      </div>
-      <div class="date"><?php echo get_the_date('d/m/Y'); ?></div>
-    </div>
+  get_template_part('partials/post');
 
-    <div class="pad">
-      <h3><?php the_title(); ?></h3>
-      <p><?php echo get_the_excerpt(); ?></p>
-
-      <div class="meta">
-        <span class="chip">✍️ <?php the_author(); ?></span>
-        <span class="chip">📌 Lettura breve</span>
-      </div>
-
-      <div style="margin-top:12px">
-        <span class="btn">Leggi →</span>
-      </div>
-    </div>
-  </a>
-<?php
   endwhile;
   wp_reset_postdata();
 endif;
